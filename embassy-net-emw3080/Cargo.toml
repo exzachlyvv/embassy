@@ -1,0 +1,16 @@
+[package]
+name = "embassy-net-emw3080"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+embedded-hal = { version = "1.0" }
+embedded-hal-async = { version = "1.0" }
+embassy-net-driver = { version = "0.2.0", path = "../embassy-net-driver" }
+embassy-time = { version = "0.3.0", path = "../embassy-time" }
+embassy-futures = { version = "0.1.0", path = "../embassy-futures" }
+
+defmt = { version = "0.3", optional = true }
+log = { version = "0.4.14", optional = true }
